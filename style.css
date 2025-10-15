@@ -6,8 +6,8 @@
 }
 
 body {
-  background: #fff;
-  color: #111;
+  background: #FFF9F9;
+  color: #2D2B2B;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
   padding: 2rem 1.25rem;
@@ -18,14 +18,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* === LIGHT GRADIENT BACKGROUND === */
+/* === BLUSH GRADIENT BACKGROUND === */
 .bg-gradient {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #fff, #fdf6e3, #fff);
+  background: linear-gradient(135deg, #FFF9F9, #FFEDED, #FFF9F9);
   z-index: -1;
 }
 
@@ -37,7 +37,7 @@ body {
   width: 100%;
   height: 100%;
   background: url('images/Mimae.jpg') center / cover no-repeat;
-  opacity: 0.1;
+  opacity: 0.12;
   z-index: -1;
   pointer-events: none;
   transition: opacity 1.5s ease-in-out;
@@ -57,11 +57,11 @@ body {
   font-size: 3.6rem;
   font-weight: 600;
   letter-spacing: 1.5px;
-  background: linear-gradient(to right, #FFD700, #FFA500);
+  background: linear-gradient(to right, #F4A7B9, #E87DA4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.2rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.05);
   animation: fadeInUp 0.8s ease-out;
 }
 
@@ -69,7 +69,7 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #FFD700;
+  color: #F4A7B9;
   letter-spacing: 1px;
   margin-bottom: 1.2rem;
   animation: signatureGlow 3s ease-in-out infinite;
@@ -85,14 +85,14 @@ body {
   transform: translateX(-50%);
   width: 60%;
   height: 2px;
-  background: linear-gradient(to right, transparent, #FFD700, transparent);
-  box-shadow: 0 0 8px #FFD700;
+  background: linear-gradient(to right, transparent, #F4A7B9, transparent);
+  box-shadow: 0 0 8px rgba(244, 167, 185, 0.5);
 }
 
 @keyframes signatureGlow {
-  0% { filter: drop-shadow(0 0 2px #FFD700); }
-  50% { filter: drop-shadow(0 0 8px #FFD700); }
-  100% { filter: drop-shadow(0 0 2px #FFD700); }
+  0% { filter: drop-shadow(0 0 2px rgba(244, 167, 185, 0.6)); }
+  50% { filter: drop-shadow(0 0 8px rgba(244, 167, 185, 0.8)); }
+  100% { filter: drop-shadow(0 0 2px rgba(244, 167, 185, 0.6)); }
 }
 
 .social {
@@ -105,20 +105,20 @@ body {
 }
 
 .social-link {
-  color: #FFD700;
+  color: #F4A7B9;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(244, 167, 185, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 215, 0, 0.2);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border: 1px solid rgba(244, 167, 185, 0.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
 }
 
 .social-link:hover {
-  background: rgba(255, 215, 0, 0.25);
+  background: rgba(244, 167, 185, 0.2);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(244, 167, 185, 0.15);
 }
 
 /* === GALLERY GRID === */
@@ -136,7 +136,7 @@ body {
   aspect-ratio: 1;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
   transition: 
     transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1),
     box-shadow 0.4s ease,
@@ -145,7 +145,7 @@ body {
   background: #fff;
   position: relative;
   z-index: 1;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(244, 167, 185, 0.1);
 }
 
 .card img {
@@ -158,7 +158,7 @@ body {
 
 .card:hover {
   transform: scale(1.05) translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1), 0 0 0 2px rgba(255,215,0,0.2);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08), 0 0 0 2px rgba(244, 167, 185, 0.3);
   z-index: 3;
 }
 
@@ -178,8 +178,8 @@ body {
   justify-content: center;
   padding: 1.5rem;
   position: relative;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255,215,0,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  border: 1px solid rgba(244, 167, 185, 0.3);
 }
 
 .card.hero::after {
@@ -187,21 +187,21 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.8rem;
   font-weight: 700;
-  background: linear-gradient(to right, #FFD700, #FF8C00);
+  background: linear-gradient(to right, #F4A7B9, #E87DA4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.05);
   margin-bottom: 0.5rem;
   animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0% { opacity: 1; }
-  50% { opacity: 0.8; }
+  50% { opacity: 0.85; }
   100% { opacity: 1; }
 }
 
-/* === CTA CARD — SALES ENGINE === */
+/* === CTA CARD — WHATSAPP === */
 .card.cta {
   display: flex;
   flex-direction: column;
@@ -210,47 +210,47 @@ body {
   text-align: center;
   padding: 1.8rem;
   background: #fff;
-  border: 1px solid rgba(255,215,0,0.3);
+  border: 1px solid rgba(244, 167, 185, 0.3);
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.03);
   animation: fadeInUp 0.8s ease-out 0.8s both;
 }
 
 .card.cta p {
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
-  color: #111;
+  color: #2D2B2B;
   font-weight: 500;
 }
 
 .button {
-  background: linear-gradient(to right, #FFD700, #FFA500);
-  color: #000;
+  background: linear-gradient(to right, #F4A7B9, #E87DA4);
+  color: #fff;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   padding: 0.9rem 2rem;
   border-radius: 32px;
   text-decoration: none;
   transition: all 0.35s ease;
-  box-shadow: 0 4px 16px rgba(255,215,0,0.2);
+  box-shadow: 0 4px 16px rgba(244, 167, 185, 0.3);
   font-size: 1.05rem;
   letter-spacing: 0.5px;
 }
 
 .button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 24px rgba(255,215,0,0.3);
-  background: linear-gradient(to right, #FFC100, #FF8C00);
+  box-shadow: 0 6px 24px rgba(244, 167, 185, 0.4);
+  background: linear-gradient(to right, #E87DA4, #D96598);
 }
 
 /* === FOOTER === */
 .credits {
   text-align: center;
   font-size: 0.85rem;
-  color: #777;
+  color: #888;
   margin-top: 2.5rem;
   padding-top: 1.2rem;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(244, 167, 185, 0.2);
   animation: fadeInUp 0.8s ease-out 1s both;
 }
 
